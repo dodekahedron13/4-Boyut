@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Boyut</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+</head>
+<body>
+
+    <div class="circle" id="circle" hidden></div>
+
+    <div class="circle" id="inputcircle"></div>
+
+    <div class="container">
+        <button class="btn btn-success mt-4" style="font-weight: bold;" id="start">Kayda Başla</button>
+        <button class="btn btn-danger mt-4" style="font-weight: bold;" id="end" disabled>Kaydı Bitir</button>
+        <button class="btn btn-primary mt-4" style="font-weight: bold;" id="saveend" disabled>Kaydı Kaydet ve Bitir</button>
+
+        <button class="btn btn-info mt-4 float-right" style="font-weight: bold;" id="play" disabled>Oynat</button>
+
+        
+        <div class="form-group row mt-4">
+            <label for="xx" class="col-sm-1 col-form-label font-weight-bold">X:</label>
+            <div class="col-sm-3">
+                <input type="number" id="xx" min="0" step="10" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-group row mt-4">
+            <label for="yy" class="col-sm-1 col-form-label font-weight-bold">Y:</label>
+            <div class="col-sm-3">
+                <input type="number" id="yy" min="0" step="10" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-group row mt-4">
+            <label for="speed" class="col-sm-1 col-form-label font-weight-bold">Hız:</label>
+            <div class="col-sm-3">
+                <input type="number" id="speed" min="1" value="1" step="1" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="form-group row mt-4">
+            <label for="volume" class="col-sm-1 col-form-label font-weight-bold">Boyut:</label>
+            <div class="col-sm-3">
+                <input type="number" id="volume" min="1" value="1" step="1" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="text-center text-danger">
+            <h5>k+b = Kaydı Başlat</h5>
+            <h5>k+n = Kaydı Kaydı Bitir</h5>
+            <h5>k+m = Kaydı Kaydet ve Bitir</h5>
+            <h5>k+L = Kaydı Oynat</h5>
+        </div>
+        
+        
+    </div>    
+    
+    <script src="custom.js"></script>    
+</body>
+</html>
