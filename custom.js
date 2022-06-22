@@ -39,7 +39,7 @@ $(function ($) {
     
     const __realTime = () => {
         window.d = new Date;
-        return window.realTime = d.toLocaleTimeString() + '.' + d.getMilliseconds() + '-' +d.toLocaleDateString();        
+        return window.realTime = `${d.toLocaleTimeString()} . ${d.getMilliseconds()} - ${d.toLocaleDateString()}`;        
     }
 
     const takipEt = () => {        
